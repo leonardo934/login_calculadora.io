@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+padding: 0;
+}
+
+
+.pagina_toda{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-bottom: 30px;
+    }
+
+    #catoda {
+        height: 100vh !important;
+        max-height: 100vh;
+        display: flex;
+        flex-direction:row;
+    }
+    
+
+    .centro{
+        display: flex;
+        flex-direction: column;
+        width: 411px;
+        }
+
+
+
+    #cadastro {
+        border: black 2px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 499px;
+       
+    }
+
+    #login {
+        border: black 2px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 499px;
+        
+    }
+
+
+#pagina_cadastro{
+ 
+    display: none;
+    flex-direction: column;
+    width: 499px
+ 
+}
+
+
+.bt {
+
+    display: flex;
+flex-direction: row;
+justify-content: center;    
+}
+
+.alt {
+    margin-left: 5px;
+    width: 100px;
+    padding: 1px;
+}
+
+#pagina_login{
+    display: flex;
+    flex-direction: column;
+    width: 499px
+}
+
+
+.espaco1 {
+    flex: 1;
+
+}
+
+.espaco2{
+    flex: 1;
+}
+
+body {
+    height: 100vh;
+}
+
+
+
+
+
+.calculo{
+display: flex;
+flex-direction:row;
+justify-content:center;
+margin-bottom: 30px;
+
+}
+
+#pagina_calculadora {
+    border: black 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 499px;
+  display: none;
+}
+
+.pagina_toda_calculadora{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-bottom: 30px;
+    }
+
+
+#catoda {
+    height: 100vh !important;
+    max-height: 100vh;
+    display: flex;
+    flex-direction:row;
+    
+}
+
+.centro{
+    display: flex;
+    flex-direction: column;
+    width: 499px;
+    }
+
+.espaco1 {
+    flex: 1;
+
+}
+
+.espaco2{
+    flex: 1;
+}
+
+
+#btMul{
+    margin:2px ;
+}
+
+#btSub{
+    margin:2px ;
+}
+
+
+#btsomar{
+    margin:2px ;
+}
+
+#btDiv{
+    margin:2px ;
+}
+
+
+.sinal{
+margin:2px ;
+
+}
+#limpar{
+    margin-bottom: 21px;
+}
