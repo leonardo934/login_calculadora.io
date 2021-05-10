@@ -91,21 +91,20 @@ logar.addEventListener("click", function () {
     const senhalog = document.getElementById("pwd_log").value
 
     if (emaillog === novoemail && senhalog === novasenha) {
-         alert(novousuario + " você esta logado")
+        alert(novousuario + " você esta logado")
 
 
         const calculadora = document.getElementById("pagina_calculadora")
-        calculadora .style.display = "flex"
-    
-    
+        calculadora.style.display = "flex"
+
+
         const paginalogin = document.getElementById("pagina_login")
-    
+
         paginalogin.style.display = "none"
 
-        
+
         const paginacadastro = document.getElementById("pagina_cadastro")
         paginacadastro.style.display = "none"
-    
 
 
 
@@ -115,10 +114,11 @@ logar.addEventListener("click", function () {
 
 
 
-    } else { 
-return alert("E-mail ou Senha incorreta")
+
+    } else {
+        return alert("E-mail ou Senha incorreta")
     }
-  
+
 })
 
 
@@ -138,15 +138,15 @@ return alert("E-mail ou Senha incorreta")
 
 
 
-const btsomar = document.getElementById("btsomar")
+let btsomar = document.getElementById("btsomar")
 
 
 btsomar.addEventListener("click", function () {
 
-    const valor1Soma = document.getElementById("valor1Soma")
+    let valor1Soma = document.getElementById("valor1Soma")
     valor1Soma = valor1Soma.value
 
-    const valor2Soma = document.getElementById("valor2Soma")
+    let valor2Soma = document.getElementById("valor2Soma")
     valor2Soma = valor2Soma.value
 
     if (valor1Soma < 0) {
@@ -158,7 +158,7 @@ btsomar.addEventListener("click", function () {
     } else if (valor2Soma == 0) {
         return alert("Não pode ser 0")
     } else {
-        const soma = Number(valor1Soma) + Number(valor2Soma)
+        let soma = Number(valor1Soma) + Number(valor2Soma)
         resultadoSoma = document.getElementById("resultadoSoma")
         resultadoSoma.innerHTML = soma
     }
@@ -167,13 +167,13 @@ btsomar.addEventListener("click", function () {
 
 })
 
-const btSub = document.getElementById("btSub")
+let btSub = document.getElementById("btSub")
 
 btSub.addEventListener("click", function () {
-    const valor1Sub = document.getElementById("valor1Sub")
+    let valor1Sub = document.getElementById("valor1Sub")
     valor1Sub = valor1Sub.value
 
-    const valor2Sub = document.getElementById("valor2Sub")
+    let valor2Sub = document.getElementById("valor2Sub")
     valor2Sub = valor2Sub.value
 
 
@@ -187,22 +187,22 @@ btSub.addEventListener("click", function () {
         return alert("Não pode ser 0")
     } else {
 
-        const Sub = Number(valor1Sub) - Number(valor2Sub)
-        const resultadoSub = document.getElementById("resultadoSub")
+        let Sub = Number(valor1Sub) - Number(valor2Sub)
+        let resultadoSub = document.getElementById("resultadoSub")
         resultadoSub.innerHTML = Sub
     }
 
 
 })
 
-const btMul = document.getElementById("btMul")
+let btMul = document.getElementById("btMul")
 
 btMul.addEventListener("click", function () {
 
-    const valor1Mul = document.getElementById("valor1Mul")
+    let valor1Mul = document.getElementById("valor1Mul")
     valor1Mul = valor1Mul.value
 
-    const valor2Mul = document.getElementById("valor2Mul")
+    let valor2Mul = document.getElementById("valor2Mul")
     valor2Mul = valor2Mul.value
 
     if (valor1Mul < 0) {
@@ -210,19 +210,19 @@ btMul.addEventListener("click", function () {
     } else if (valor2Mul < 0) {
         return alert("Não pode colocar Número negativo")
     } else {
-        const Mul = Number(valor1Mul) * Number(valor2Mul)
+        let Mul = Number(valor1Mul) * Number(valor2Mul)
 
-        const resultadoMul = document.getElementById("resultadoMul")
+        let resultadoMul = document.getElementById("resultadoMul")
         resultadoMul.innerHTML = Mul
     }
 })
-const btDiv = document.getElementById("btDiv")
+let btDiv = document.getElementById("btDiv")
 
 btDiv.addEventListener("click", function () {
-    const valor1Div = document.getElementById("valor1Div")
+    let valor1Div = document.getElementById("valor1Div")
     valor1Div = valor1Div.value
 
-    const valor2Div = document.getElementById("valor2Div")
+    let valor2Div = document.getElementById("valor2Div")
     valor2Div = valor2Div.value
 
 
@@ -235,9 +235,9 @@ btDiv.addEventListener("click", function () {
     } else if (valor2Div == 0) {
         return alert("Não pode ser 0")
     } else {
-        const Div = Number(valor1Div) - Number(valor2Div)
+        let Div = Number(valor1Div) - Number(valor2Div)
 
-        const resultadoDiv = document.getElementById("resultadoDiv")
+        let resultadoDiv = document.getElementById("resultadoDiv")
         resultadoDiv.innerHTML = Div
     }
 
@@ -247,24 +247,24 @@ btDiv.addEventListener("click", function () {
 
 
 
-const limpar = document.getElementById("limpar")
+let limpar = document.getElementById("limpar")
 
 limpar.addEventListener("click", function () {
-document.getElementById("valor1Soma").value =""
-document.getElementById("valor2Soma").value =""
-document.getElementById("resultadoSoma").innerHTML =""
-//---------------------------------------------
-document.getElementById("valor1Sub").value =""
-document.getElementById("valor2Sub").value =""
-document.getElementById("resultadoSub").innerHTML =""
-//---------------------------------------------
-document.getElementById("valor1Mul").value =""
-document.getElementById("valor2Mul").value =""
-document.getElementById("resultadoMul").innerHTML =""
-//---------------------------------------------
-document.getElementById("valor1Div").value =""
-document.getElementById("valor2Div").value =""
-document.getElementById("resultadoDiv").innerHTML =""
+    document.getElementById("valor1Soma").value = ""
+    document.getElementById("valor2Soma").value = ""
+    document.getElementById("resultadoSoma").innerHTML = ""
+    //---------------------------------------------
+    document.getElementById("valor1Sub").value = ""
+    document.getElementById("valor2Sub").value = ""
+    document.getElementById("resultadoSub").innerHTML = ""
+    //---------------------------------------------
+    document.getElementById("valor1Mul").value = ""
+    document.getElementById("valor2Mul").value = ""
+    document.getElementById("resultadoMul").innerHTML = ""
+    //---------------------------------------------
+    document.getElementById("valor1Div").value = ""
+    document.getElementById("valor2Div").value = ""
+    document.getElementById("resultadoDiv").innerHTML = ""
 
 
 })

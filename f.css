@@ -168,4 +168,23 @@ margin:2px ;
 }
 #limpar{
     margin-bottom: 21px;
+    
+}
+
+#resultadoSoma{
+    font-size:18px;
+font-weight:600;
+}
+
+#resultadoSub{
+    font-size:18px;
+font-weight:600;
+}
+#resultadoMul{
+    font-size:18px;
+font-weight:600;
+}
+#resultadoDiv{
+    font-size:18px;
+font-weight:600;
 }
